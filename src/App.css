@@ -1,3 +1,15 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2;
+  margin: auto;
+  max-width: auto;
+  width: 100%;
+}
+.subContainer{
+  padding: 1rem;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -46,16 +58,20 @@
   font-family: 'StaffX', sans-serif;
 }
 
-.prueba1{
+.title1{
   font-family: 'Roobert', sans-serif;
   font-weight: 500;
 }
-.prueba2{
+.title2{
   font-family: 'Roobert', sans-serif;
 }
-.prueba3{
+.title3{
   font-family: 'Roobert', sans-serif;
 }
-.prueba4{
+.title4{
+  font-family: 'Roobert', sans-serif;
+}
+
+.parrafo1{
   font-family: 'Roobert', sans-serif;
 }
