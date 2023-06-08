@@ -33,15 +33,61 @@ function App() {
           maiores sint alias.
         </p>
         <h1 className="title">CARD</h1>
-        <div className="flex flex-col self-stretch transition-shadow duration-300 hover:shadow-product-card bg-white rounded-md h-30">
-          <figure className="flex flex-1">
-            {/* <ProductImage {...props} carroucelMode={carroucelMode} />
-            <ProductDetail {...props} /> */}
+        <div className="flex flex-col self-stretch transition-shadow duration-300 hover:shadow-product-card bg-white rounded-md w-64">
+          <figure className="flex flex-1 lg:flex-col">
+            {/* FIGURA */}
+            <div className="relative w-1/2 lg:w-full">
+              <div className="relative after:content-[''] after:block ">
+                <img
+                  className="rounded-t-md block object-contain w-64"
+                  src="https://media.promart.pe/img_optim/131378.jpg"
+                />
+              </div>
+
+              <div className="absolute left-2 top-2 flex flex-col items-start gap-2 w-fit">
+                {/* TAG */}
+                <span className="px-1.5 py-0.5 rounded-b-md rounded-tr-md text-center font-staffXX text-white bg-blue-700 text-xl lg:text-2xl !leading-none">
+                  EXCLUSIVO WEB
+                </span>
+                {/* DEWSCUENTO */}
+                <span className=" px-2 pt-0.5 bg-yellow leading-none rounded-b-md rounded-tr-md   text-sm md:text-base lg:text-2xl text-center font-staffXX text-black">
+                  -15%
+                </span>
+              </div>
+            </div>
+            {/* DETALLE DEL PROFUCTO */}
+            <div className="px-3 pt-3 font-roboto flex gap-1 flex-col flex-1">
+              <span className="flex justify-between">
+                <p className="text-xxs md:text-xs lg:text-sm text-start text-black">
+                  ORANGE
+                </p>
+                <p className="text-xxs md:text-xs lg:text-sm text-end text-black">
+                  SKU: 345T5
+                </p>
+              </span>
+              <span className="lg:flex-1 lg:flex lg:items-center">
+                <p
+                  title="CEMENTO"
+                  className="text-sm lg:text-lg font-bold !leading-tight line-clamp-2 text-black"
+                >
+                  CEMENTO
+                </p>
+              </span>
+              <div className="flex-1 lg:flex-none" />
+              <div className="flex items-end gap-2 font-staffXX font-bold">
+                <span className="leading-4">
+                  <p className="text-gray-160 line-through">S/34.00</p>
+                  <p className="text-3xl lg:text-4xl text-black">S/45.00</p>
+                </span>
+                <span className="text-center text-orange bg-orange-50 w-max px-1 py-0.5 rounded-md mb-2 leading-none">
+                  AHORRAS: 1.00
+                </span>
+              </div>
+            </div>
           </figure>
 
           {/* <ProductFooter {...props} carroucelSwiper={carroucelSwiper} /> */}
         </div>
-        <div className="h-32 w-4 bg-blue-300">zxsfxfs</div>
       </div>
     </div>
   );
